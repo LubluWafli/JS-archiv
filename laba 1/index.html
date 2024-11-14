@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "dom">ClickMe</button>
+    <button id = "dom2">ClickMe</button>
+    <script>
+        let clicked = false;
+        const btn = document.getElementById("dom");
+        const btn2 = document.getElementById("dom2");
+        btn2.style.color = "black";
+        btn2.style.fontSize = "0.85em";
+        btn2.style.borderRadius = "0px"
+        btn.addEventListener("click",function()
+        {
+            if (!clicked)
+        {
+            btn2.style.color = "green";
+            btn2.style.fontSize = "1.4em";
+            btn2.style.borderRadius = "50%"
+            clicked = true
+        }
+        else
+        {
+            btn2.style.color = "black";
+            btn2.style.fontSize = "0.85em";
+            btn2.style.borderRadius = "0px"
+            clicked = false
+        }
+        }
+    )
+    
+    </script>
+</body>
+</html>
