@@ -21,4 +21,17 @@ score.innerText = title.data.score
 
 const ID = document.getElementById('ID');
 ID.innerText = animeID
+
+title = await check(animeID + 100);
+const name2 = document.getElementById('name2');
+name2.innerText = title.data.title_english
+
+const year2 = document.getElementById('year2');
+year2.innerText = title.data.aired.string
+
+const score2 = document.getElementById('score2');
+score2.innerText = title.data.score
+
+const ID2 = document.getElementById('ID2');
+ID2.innerText = animeID
 }
