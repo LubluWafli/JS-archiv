@@ -22,7 +22,47 @@ function check()
     console.log(isValidLogin);
     console.log(isValidNumber);
     console.log(isValidAge);
-    
+
+    if (!isValidEmail){
+        InputEmail.classList.add('is-invalid');
+        InputEmail.classList.remove('is-valid');
+    }
+    else
+    {
+        InputEmail.classList.remove('is-invalid');
+    }
+    if (!isValidLogin){
+        InputLogin.classList.add('is-invalid');
+        InputLogin.classList.remove('is-valid');
+    }
+    else
+    {
+        InputLogin.classList.remove('is-invalid');
+    }
+    if (!isValidNumber){
+        InputPhone.classList.add('is-invalid');
+        InputPhone.classList.remove('is-valid');
+    }
+    else
+    {
+        InputPhone.classList.remove('is-invalid');
+    }
+    if (!isValidPassword){
+        InputPassword.classList.add('is-invalid');
+        InputPassword.classList.remove('is-valid');
+    }
+    else
+    {
+        InputPassword.classList.remove('is-invalid');
+    }
+    if (!isValidAge){
+        InputAge.classList.add('is-invalid');
+        InputAge.classList.remove('is-valid');
+    }
+    else
+    {
+        InputAge.classList.remove('is-invalid');
+    }
     if(isValidEmail && isValidPassword && isValidLogin && isValidEmail && isValidNumber && isValidAge)
     {
         alert('Вы успешно зарегистрировались')
