@@ -39,3 +39,15 @@
     transform: rotate(360deg);
   }
 }
+
+#cards {
+margin-left: 100px; /* Отступ справа от бокового меню */
+margin-top: 50px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+/* Отступы между рядами */
+row-gap: 50px;
+/* Отступы между колонками */
+column-gap: 20px;
+}
